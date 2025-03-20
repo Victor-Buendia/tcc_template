@@ -1,0 +1,103 @@
+\chapter{Estudo Exploratório}
+\label{cap-proposta}
+
+\section{Proposta}
+\label{prop-sig}
+
+% https://latex.org/forum/viewtopic.php?t=5903
+
+% SIG PRELIMINAR
+% \begin{sidewaysfigure}
+% 	\centering
+% 	\caption[SIG Preliminar da Privacidade de Dados]{Diagrama SIG Preliminar para a modelagem de Privacidade de Dados.}
+% 	\label{figura-sig-preliminar}
+% 	\includegraphics[keepaspectratio=true,width=\textwidth]{figuras/sig_preliminar.eps}
+% 	\legend{Fonte: Autor.}
+% \end{sidewaysfigure}
+
+\section{Provas de Conceito}
+\label{prop-pocs}
+
+\subsubsection*{Problema e Objetivo}
+
+\subsubsection*{Solução ``Ótima'' e Potencial}
+
+\subsubsection*{Projeto da PoC}
+
+\subsubsection*{Construção da PoC}
+
+% A Figura \ref{figura-poc1-transformacao} evidencia os dados gerados antes da transformação e os dados curados após a transformação, aplicando as técnicas de supressão e minimização explicadas. A lógica por trás da supressão resume-se a selecionar apenas os campos necessários, como pode ser visto no Código \ref{poc1-codigo}.
+
+% \begin{code}[ht]
+% 	\captionsetup{type=code}
+% 	\captionof{code}[Implementação da Supressão de Dados na PoC 1]{Trecho de Código que implementa a Supressão de Dados na Primeira Prova de Conceito.}
+% 	\label{poc1-codigo}
+% 	\begin{minted}[mathescape, linenos, fontsize=\small, breaklines, breakanywhere]{python}
+% def transform_candidaturas(dir_name: str, file_path: str, thread_id: int) -> None:
+% 	with open(file_path, 'r') as file:
+% 		data = json.load(file)
+% 		transformed_data = [
+% 			{
+% 				'id_candidatura': record['id_candidatura'],
+% 				'id_vaga': record['id_vaga'],
+% 				'nome': record['nome'],
+% 				'cidade': record['cidade'],
+% 				'estado': record['estado'],
+% 				'pais': record['pais'],
+% 				'telefone': record['telefone'],
+% 				'email': record['email'],
+% 				'experiencia_profissional': record['experiencia_profissional'],
+% 				'habilidades': record['habilidades'],
+% 				'idiomas': record['idiomas'],
+% 				'portfolio_url': record['portfolio_url'],
+% 			} for record in data
+% 		]
+% 	with open(curated_path.format(dir_name, dir_name, thread_id), 'w') as file:
+% 		file.write(json.dumps(transformed_data, indent=4))
+% \end{minted}
+% \legend{Fonte: Autor. Código Acessível no GitHub em: \url{https://github.com/Victor-Buendia/tcc_poc1/blob/main/emprego/transform/__init__.py}.}
+% \end{code}
+
+% \begin{figure}[h]
+% 	\centering
+% 	\caption[Ilustração da Supressão de Dados na PoC 1]{Comparação da tabela de Candidaturas após a implementação da Supressão de Dados na Primeira Prova de Conceito.}
+% 	\includegraphics[keepaspectratio=true,scale=0.5]{figuras/poc1_transformacao.eps}
+% 	\label{figura-poc1-transformacao}
+% 	\legend{Fonte: Autor.}
+% \end{figure}
+
+% A Tabela \ref{poc1-antes} evidencia os dados gerados antes da transformação e a Tabela \ref{poc1-depois} evidencia os dados curados após a transformação, aplicando as técnicas de supressão e minimização explicadas. 
+
+% \begin{table}
+% 	\parbox{.45\linewidth}{
+% 		\centering
+% 		\caption{Foo}
+% 		\label{poc1-antes}
+% 		\begin{tabular}{ccc}
+% 			\hline
+% 			a&b&c\\
+% 			\hline
+% 		\end{tabular}
+% 		\legend{Fonte: Autor.}
+% 	}
+% 	\hfill
+% 	\parbox{.45\linewidth}{
+% 		\centering
+% 		\caption{Bar}
+% 		\label{poc1-depois}
+% 		\begin{tabular}{ccc}
+			
+% 			\hline
+% 			d&e&f\\
+% 			\hline
+% 		\end{tabular}
+% 		\legend{Fonte: Autor.}
+% 	}
+% \end{table}
+
+\subsubsection*{Avaliação de Resultados e Aprendizados}
+
+\section{Resumo do Capítulo}
+\label{prop-resumo}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque porta accumsan. Cras sed vestibulum lorem. Curabitur ac tincidunt urna. Praesent non faucibus risus. Praesent efficitur lacus et euismod venenatis. Nulla nec ante felis. Praesent ex libero, mollis sit amet commodo et, finibus id orci. Pellentesque ut mi accumsan sapien hendrerit maximus. Praesent iaculis sit amet erat a imperdiet. Maecenas ac leo pulvinar lacus posuere pharetra. Sed suscipit, arcu ut commodo elementum, ipsum tellus fermentum dolor, nec aliquam elit tellus et felis. Phasellus lacinia tempus tempus. In dictum mi purus, nec lobortis turpis consequat in. Etiam suscipit leo quis augue vulputate auctor.

@@ -1,0 +1,13 @@
+{
+	"emeraldwalk.runonsave": {
+        "commands": [
+            {
+				"match": ".*",
+				"isAsync": true,
+				"cmd": "PATH=/usr/local/bin:$PATH make pdf",
+				"autoShowOutputPanel": "error",
+				"shell": "/bin/zsh",
+			}
+        ]
+    },
+}

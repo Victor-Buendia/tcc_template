@@ -1,0 +1,13 @@
+services:
+    latex:
+      container_name: tcc
+      build:
+        context: .
+      volumes:
+          - ./latex:/home/latex
+      command: bash -c 'make clean && make'
+      deploy:
+        resources:
+          limits:
+            cpus: '0.5'
+            memory: 4G
